@@ -6,7 +6,16 @@ def encode(password):  # encodes a password by adding 3 to each number (Coded by
             temp_number -= 10
         output_password += str(temp_number)  # string grows each iteration
     return output_password
-        
+
+def decode(password): # coded by lauren kempfe
+    decodedpass = ''  # decodedpass is a string
+    for num in password:
+        if int(num) - 3 < 0: #checks if negative
+            temp = int(num) + 7 #adds back 10 and subtracts 3
+        else:
+            temp = int(num) - 3
+        decodedpass += str(temp)
+    return int(decodedpass)
         
 def main():
     while True:
@@ -30,7 +39,7 @@ def main():
             password = encode(password)
             print("Your password has been encoded and stored!\n")
         elif option == 2:  # left blank for partner to modify
-            pass
+            print(f'The encoded password is {password}, and original password is {decode(password)}.')
         elif option == 3:  # ends function
             break
         else:  # tells user to enter a valid menu number
