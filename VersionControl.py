@@ -13,11 +13,11 @@ def main():
 
         # prints the menu
 
-        print("Menu\n\n"
-              "-------------\n\n"
-              "1. Encode\n\n"
-              "2. Decode\n\n"
-              "3. Quit\n\n\n")
+        print("Menu\n"
+              "-------------\n"
+              "1. Encode\n"
+              "2. Decode\n"
+              "3. Quit\n")
 
         # user input for menu
 
