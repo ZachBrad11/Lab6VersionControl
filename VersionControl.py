@@ -1,4 +1,4 @@
-def encode(password):  # encodes a password by adding 3 to each number
+def encode(password):  # encodes a password by adding 3 to each number (Coded by: Zachary Bradley)
     output_password = ""  # output will be a string
     for number in password:
         temp_number = int(number) + 3  # adds 3 to number
